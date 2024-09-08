@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+
+:root {
+  --btn-font-size: 1rem;
+  --btn-text-color:white;
+  --btn-outline-color: white;
+  --btn-front-bgc: hsla(0, 0%, 0%, 0.3);
+  --btn-front-bgc--hover: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Orbitron;
+}
+
+.btn {
+  position: absolute; /* Changed to absolute for positioning over Spline object */
+  top: 60%; /* Adjust these values as needed */
+  left: 15%;
+  transform: translate(-50%, -50%); /* Center the button */
+  z-index: 10; /* Ensure it's above the Spline object */
+  padding: 1rem 3rem;
+  color: var(--btn-text-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+.btn::after {
+  content: "→"; /* Arrow symbol */
+  position: absolute;
+  right: 20px; /* Start outside of the button */
+  top: 50%;
+  transform: translateY(-50%);
+  transition: right 0.3s ease-in-out;
+}
+.btn:hover::after {
+  right: 10px; /* Move arrow inside the button on hover */
+}
+
+@media (max-width: 640px) {
+  .btn {
+    padding: 10px;
+    margin-left: 4rem;
+    right: -0px;
+    box-shadow: inset;
+
+  }
+
+  .btn__text {
+    font-size: 1rem; /* Smaller font size for smaller screens */
+  }
+}
+@media (max-width: 370px) {
+  .btn {
+    padding: 10px;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    right: -0px;
+    box-shadow: inset;
+
+  }
+
+  .btn__text {
+    font-size: 10px; /* Smaller font size for smaller screens */
+  }
+
+}

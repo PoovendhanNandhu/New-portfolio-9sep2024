@@ -1,0 +1,154 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #170617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a0e4e;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b1470;
+}
+
+
+Spline {
+    width: 100%;
+    height: 100%;
+  }
+
+  .spline-container {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  
+  
+
+  html, body {
+    height: 100%;
+    overflow-y: auto;
+  }
+  .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 20; /* Ensure this is higher than the Spline component's z-index to overlay */
+  }
+  
+  .spline-title-portfolio {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    font-size: 7rem;
+    font-family: 'Orbitron', sans-serif;
+    z-index: 10; /* Above the Spline component */
+    color: white; /* Or any color that fits your design */
+  }
+
+  @media (max-width: 640px) {
+    .spline-title-portfolio {
+      top: 100px; /* Adjust as needed */
+      left: 30px; /* Adjust as needed */
+      font-size: 3.5rem;
+    }
+
+
+  }
+  @media (max-width: 380px) {
+    .spline-title-portfolio {
+      top: 160px; /* Adjust as needed */
+      left: 20px; /* Adjust as needed */
+      font-size: 3rem;
+    }
+  }
+
+  .work{
+ 
+    color: white;
+    width: min(450px,100%);
+    margin-top: -18.7rem;
+    margin-left: 55rem;;
+    
+    
+  }
+
+
+
+  .work-experience {
+    background: linear-gradient(to bottom right, #4a0e4e, #170617);
+    border: 1px solid rgba(110, 88, 88, 0.3);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: white;
+    max-width: 400px;
+
+ 
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .back-button {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .work-item {
+    margin-bottom: 1.5rem;
+  }
+  .work-item.faded {
+    opacity: 0.5;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  .work-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .company {
+    font-size: 1rem;
+  }
+  .time {
+    font-size: 0.8rem;
+  }
+
+  .work-experience {
+    background: linear-gradient(to bottom right, #4a0e4e, #170617);
+    border: 1px solid rgba(110, 88, 88, 0.3);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    color: white;
+    max-width: 400px;
+  }

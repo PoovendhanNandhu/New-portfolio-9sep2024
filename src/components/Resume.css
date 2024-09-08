@@ -1,0 +1,70 @@
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.resume-card {
+  background: rgba(189, 181, 181, 0.1);
+  border: 1px solid rgba(110, 88, 88, 0.3);
+  color: white;
+  border-radius: 25px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-top: -13rem;
+  margin-left: 5rem;
+  margin-right: 15rem;
+  width: min(350px,100%);
+  height: 170px;
+}
+.resume-card:hover {
+  transform: translateY(-5px);
+}
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-content {
+  display: flex;
+  flex-direction: column;
+}
+.year {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-bottom: 4px;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.icons {
+  display: flex;
+  gap: 15px;
+}
+.icon-wrapper {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.icon-wrapper:hover {
+  transform: scale(1.2);
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+.blink {
+  animation: blink 0.5s ease;
+}
+
+/* write mobile responsive */
+@media screen and (max-width: 768px) {
+  .resume-card {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    
+  }
+}
